@@ -1,27 +1,66 @@
 body {
   background-color: #101419; }
 
-h1 {
+#titleText {
   text-align: center; }
+  #titleText .spanInitial, #titleText .spanEnd {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 100px;
+    color: #B96467; }
+  #titleText .spanMiddle {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 100px;
+    color: #632C2E; }
+  #titleText .fa-sliders-h {
+    font-size: 75px;
+    color: #632C2E;
+    margin-left: 30px; }
 
-.spanInitial, .spanEnd {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 75px;
-  color: #B96467; }
-
-.spanMiddle {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 75px;
-  color: #632C2E; }
-
-.call-to-action {
-  background-color: #f75d03;
-  color: white; }
+hr {
+  color: #B96467;
+  height: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: solid; }
 
 #mainNav {
+  text-align: center;
+  font-family: "Bungee", cursive;
+  color: #2A3542;
   margin: 0;
   padding: 0;
   list-style: none; }
   #mainNav li {
     display: inline-block;
-    padding-right: 20px; }
+    padding: 10px; }
+
+h2 {
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+  color: #8498B1;
+  margin: 50px 0 0 20px; }
+
+.selectorBox {
+  font-size: 50px;
+  background-color: #1D242D;
+  border-color: #8498B1;
+  border-left-style: solid;
+  border-width: 15px;
+  margin-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 20px; }
+
+.selectorIcons {
+  color: #B96467;
+  border-color: #B96467;
+  border-radius: 10px;
+  border-style: outset;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px; }
+
+.call-to-action {
+  background-color: #f75d03;
+  color: white; }

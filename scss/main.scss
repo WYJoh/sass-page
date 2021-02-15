@@ -4,33 +4,79 @@
 body {
     background-color: $secondarycolor;
 }
-h1 {
+@mixin topHeading {
     text-align: center;
+
+    .spanInitial, .spanEnd {
+        font-family: $brandfont;
+        font-size: 100px;
+        color: $brandcolor;
+    }
+    .spanMiddle {
+        font-family: $brandfont;
+        font-size: 100px;
+        color: $brandbold;
+    }
+    .fa-sliders-h {
+        font-size: 75px;
+        color: $brandbold;
+        margin-left: 30px;
+    }
 }
-.spanInitial, .spanEnd {
-    font-family: $brandfont;
-    font-size: 75px;
+#titleText {
+    @include topHeading;
+}
+hr {
     color: $brandcolor;
-}
-.spanMiddle {
-    font-family: $brandfont;
-    font-size: 75px;
-    color: $brandbold;
-}
-.call-to-action {
-    background-color: $ctacolor;
-    color: white;
+    height: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: solid;
 }
 @mixin horizontalNav {
+    text-align: center;
+    font-family: $secondaryfont;
+    color: $complementarybold;
     margin: 0;
     padding: 0;
     list-style: none;
 
     li {
         display: inline-block;
-        padding-right: 20px;
+        padding: 10px;
     }
 }
 #mainNav {
     @include horizontalNav;
+}
+h2 {
+    font-family: $secondaryfont;
+    font-size: 40px;
+    color: $complementarycolor;
+    margin: 50px 0 0 20px;
+}
+.selectorBox {
+    font-size: 50px;
+    background-color: $complementarytint;
+    border-color: $complementarycolor;
+    border-left-style: solid;
+    border-width: 15px;
+    margin-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+.selectorIcons {
+    color: $brandcolor;
+    border-color: $brandcolor;
+    border-radius: 10px;
+    border-style: outset;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+.call-to-action {
+    background-color: $ctacolor;
+    color: white;
 }
