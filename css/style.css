@@ -28,6 +28,7 @@ hr {
 #mainNav {
   text-align: center;
   font-family: "Bungee", cursive;
+  font-size: 20px;
   color: #2A3542;
   margin: 0;
   padding: 0;
@@ -57,10 +58,33 @@ h2 {
   border-color: #B96467;
   border-radius: 10px;
   border-style: outset;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px 10px 10px;
   padding: 5px; }
 
-.call-to-action {
-  background-color: #f75d03;
-  color: white; }
+.mixerBox {
+  font-size: 50px;
+  background-color: #1D242D;
+  border-color: #8498B1;
+  border-left-style: solid;
+  border-width: 15px;
+  margin-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 20px; }
+
+.audioIconPlay {
+  color: #E4E11F;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.audioIconReset {
+  color: #B9B764;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+p {
+  text-align: center;
+  color: #2A3542;
+  font-family: "Bungee", cursive;
+  font-size: 15px; }

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS Page</title>
+    <title>soundBar</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/93b9f82d17.js" crossorigin="anonymous"></script>
@@ -13,6 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function allowDrop(dragme) {
+          dragme.preventDefault();
+        }
+        
+        function drag(dragme) {
+          dragme.dataTransfer.setData("text", dragme.target.id);
+        }
+        
+        function drop(dragme) {
+          dragme.preventDefault();
+          var data = dragme.dataTransfer.getData("text");
+          var nodeCopy = document.getElementById(data).cloneNode(true);
+          nodeCopy.id = "newId";
+          dragme.target.appendChild(nodeCopy);
+        }
+        </script>
 </head>
 <body>
 
@@ -24,36 +42,43 @@
     <hr>
 
     <ul id="mainNav">
-        <li>Link 1</li>
+        <li>Night Mode</li>
         <li>|</li>
-        <li>Link 2</li>
+        <li>Day Mode</li>
     </ul>
 
     <h2>SELECTOR</h2>
     <div class="selectorBox">
         <div class="col-12">
-            <i class="fas fa-drum selectorIcons"></i>
-            <i class="fas fa-guitar selectorIcons"></i>
-            <i class="fas fa-compact-disc selectorIcons"></i>
-            <i class="fas fa-bullhorn selectorIcons"></i>
-            <i class="fas fa-phone-volume selectorIcons"></i>
-            <i class="fas fa-car selectorIcons"></i>
-            <i class="fas fa-cloud-rain selectorIcons"></i>
-            <i class="fas fa-bolt selectorIcons"></i>
-            <i class="fas fa-dog selectorIcons"></i>
-            <i class="fas fa-cat selectorIcons"></i>
-            <i class="fas fa-baby-carriage selectorIcons"></i>
-            <i class="fas fa-money-bill-wave selectorIcons"></i>
+            <i id="dragDrum" class="fas fa-drum selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragGuitar" class="fas fa-guitar selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragDisc" class="fas fa-compact-disc selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragHorn" class="fas fa-bullhorn selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragPhone" class="fas fa-phone-volume selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragCar"class="fas fa-car selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragRain" class="fas fa-cloud-rain selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragBolt" class="fas fa-bolt selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragDog" class="fas fa-dog selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragCat" class="fas fa-cat selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragBaby" class="fas fa-baby-carriage selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragMoney" class="fas fa-money-bill-wave selectorIcons" draggable="true" ondragstart="drag(event)"></i>
         </div>
     </div>
 
     <h2>MIXER</h2>
-    <div class="mixerBox">
-
+    <div id="dropDiv" class="mixerBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="col-12">
+        </div>
     </div>
 
-<!--
-    <button class="call-to-action">Contact Us</button>
--->
+    <ul id="mainNav">
+        <li>
+            <i class="fas fa-play audioIconPlay"></i>
+        </li>
+        <li>
+            <i class="fas fa-redo-alt audioIconReset"></i>
+        </li>
+    </ul>
+    <p>Audio doesn't work (yet)</p>
 </body>
 </html>

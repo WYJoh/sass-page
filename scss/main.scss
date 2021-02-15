@@ -38,6 +38,7 @@ hr {
 @mixin horizontalNav {
     text-align: center;
     font-family: $secondaryfont;
+    font-size: 20px;
     color: $complementarybold;
     margin: 0;
     padding: 0;
@@ -72,11 +73,34 @@ h2 {
     border-color: $brandcolor;
     border-radius: 10px;
     border-style: outset;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 10px 10px;
     padding: 5px;
 }
-.call-to-action {
-    background-color: $ctacolor;
-    color: white;
+.mixerBox {
+    font-size: 50px;
+    background-color: $complementarytint;
+    border-color: $complementarycolor;
+    border-left-style: solid;
+    border-width: 15px;
+    margin-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+.audioIconPlay {
+    color: $ctabold;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.audioIconReset {
+    color: $ctacolor;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+p {
+    text-align: center;
+    color: $complementarybold;
+    font-family: $secondaryfont;
+    font-size: 15px;
 }
