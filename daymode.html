@@ -32,7 +32,7 @@
         }
         </script>
 </head>
-<body id="nightBody">
+<body id="dayBody">
     <h1 id="titleText">
         <span class="spanInitial">soun</span><span class="spanMiddle">dB</span><span class="spanEnd">ar</span>
         <i class="fas fa-sliders-h"></i>
@@ -41,43 +41,43 @@
     <hr>
 
     <ul id="mainNav">
-        <li>Night Mode</li>
-        <li>|</li>
         <li>
-            <a href="daymode.html">Day Mode</a>
+            <a href="index.html">Night Mode</a>
         </li>
+        <li>|</li>
+        <li>Day Mode</li>
     </ul>
 
-    <h2 class="nightH2">SELECTOR</h2>
-    <div class="selectorBox">
+    <h2 class="dayH2">SELECTOR</h2>
+    <div class="selectorBoxDay">
         <div class="col-12">
-            <i id="dragDrum" class="fas fa-drum selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragGuitar" class="fas fa-guitar selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragDisc" class="fas fa-compact-disc selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragHorn" class="fas fa-bullhorn selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragPhone" class="fas fa-phone-volume selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragCar"class="fas fa-car selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragRain" class="fas fa-cloud-rain selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragBolt" class="fas fa-bolt selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragDog" class="fas fa-dog selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragCat" class="fas fa-cat selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragBaby" class="fas fa-baby-carriage selectorIcons" draggable="true" ondragstart="drag(event)"></i>
-            <i id="dragMoney" class="fas fa-money-bill-wave selectorIcons" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragDrum" class="fas fa-drum selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragGuitar" class="fas fa-guitar selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragDisc" class="fas fa-compact-disc selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragHorn" class="fas fa-bullhorn selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragPhone" class="fas fa-phone-volume selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragCar"class="fas fa-car selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragRain" class="fas fa-cloud-rain selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragBolt" class="fas fa-bolt selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragDog" class="fas fa-dog selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragCat" class="fas fa-cat selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragBaby" class="fas fa-baby-carriage selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
+            <i id="dragMoney" class="fas fa-money-bill-wave selectorIconsDay" draggable="true" ondragstart="drag(event)"></i>
         </div>
     </div>
 
-    <h2 class="nightH2">MIXER</h2>
-    <div id="dropDiv" class="mixerBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="dayH2">MIXER</h2>
+    <div id="dropDiv" class="mixerBoxDay" ondrop="drop(event)" ondragover="allowDrop(event)">
         <div class="col-12">
         </div>
     </div>
 
     <ul id="mainNav">
         <li>
-            <i class="fas fa-play audioIconPlayN"></i>
+            <i class="fas fa-play audioIconPlayD"></i>
         </li>
         <li>
-            <i class="fas fa-redo-alt audioIconResetN" onClick="window.location.reload();"></i>
+            <i class="fas fa-redo-alt audioIconResetD" onClick="window.location.reload();"></i>
         </li>
     </ul>
     <p>Audio button doesn't work (yet)</p>

@@ -1,8 +1,14 @@
 @import "theme";
 @import "font";
 
-body {
+#nightBody {
     background-color: $secondarycolor;
+}
+#dayBody {
+    background-color: white;
+}
+a {
+    text-decoration: none;
 }
 @mixin topHeading {
     text-align: center;
@@ -52,10 +58,16 @@ hr {
 #mainNav {
     @include horizontalNav;
 }
-h2 {
+.nightH2 {
     font-family: $secondaryfont;
     font-size: 40px;
     color: $complementarycolor;
+    margin: 50px 0 0 20px;
+}
+.dayH2 {
+    font-family: $secondaryfont;
+    font-size: 40px;
+    color: $complementarybold;
     margin: 50px 0 0 20px;
 }
 .selectorBox {
@@ -68,12 +80,30 @@ h2 {
     padding-top: 17px;
     padding-bottom: 20px;
 }
+.selectorBoxDay {
+    font-size: 50px;
+    background-color: $complementarycolor;
+    border-color: $complementarytint;
+    border-left-style: solid;
+    border-width: 15px;
+    margin-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
 .selectorIcons {
     color: $brandcolor;
     border-color: $brandcolor;
     border-radius: 10px;
     border-style: outset;
-    margin: 0 10px 10px 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.selectorIconsDay {
+    color: $brandbold;
+    border-color: $brandbold;
+    border-radius: 10px;
+    border-style: outset;
+    margin: 10px;
     padding: 5px;
 }
 .mixerBox {
@@ -86,17 +116,51 @@ h2 {
     padding-top: 17px;
     padding-bottom: 20px;
 }
-.audioIconPlay {
-    color: $ctabold;
+.mixerBoxDay {
+    font-size: 50px;
+    background-color: $complementarycolor;
+    border-color: $complementarytint;
+    border-left-style: solid;
+    border-width: 15px;
+    margin-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+.audioIconPlayN {
+    color: $ctaboldn;
     font-size: 40px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.audioIconReset {
-    color: $ctacolor;
+.audioIconPlayN:hover {
+    color: $ctaboldhovern;
+}
+.audioIconResetN {
+    color: $ctacolorn;
     font-size: 40px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.audioIconResetN:hover {
+    color: $ctacolorhovern;
+}
+.audioIconPlayD {
+    color: $ctaboldd;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.audioIconPlayD:hover {
+    color: $ctaboldhoverd;
+}
+.audioIconResetD {
+    color: $ctacolord;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.audioIconResetD:hover {
+    color: $ctacolorhoverd;
 }
 p {
     text-align: center;

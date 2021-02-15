@@ -1,5 +1,11 @@
-body {
+#nightBody {
   background-color: #101419; }
+
+#dayBody {
+  background-color: white; }
+
+a {
+  text-decoration: none; }
 
 #titleText {
   text-align: center; }
@@ -37,10 +43,16 @@ hr {
     display: inline-block;
     padding: 10px; }
 
-h2 {
+.nightH2 {
   font-family: "Bungee", cursive;
   font-size: 40px;
   color: #8498B1;
+  margin: 50px 0 0 20px; }
+
+.dayH2 {
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+  color: #2A3542;
   margin: 50px 0 0 20px; }
 
 .selectorBox {
@@ -53,12 +65,30 @@ h2 {
   padding-top: 17px;
   padding-bottom: 20px; }
 
+.selectorBoxDay {
+  font-size: 50px;
+  background-color: #8498B1;
+  border-color: #1D242D;
+  border-left-style: solid;
+  border-width: 15px;
+  margin-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 20px; }
+
 .selectorIcons {
   color: #B96467;
   border-color: #B96467;
   border-radius: 10px;
   border-style: outset;
-  margin: 0 10px 10px 10px;
+  margin: 10px;
+  padding: 5px; }
+
+.selectorIconsDay {
+  color: #632C2E;
+  border-color: #632C2E;
+  border-radius: 10px;
+  border-style: outset;
+  margin: 10px;
   padding: 5px; }
 
 .mixerBox {
@@ -71,17 +101,51 @@ h2 {
   padding-top: 17px;
   padding-bottom: 20px; }
 
-.audioIconPlay {
-  color: #E4E11F;
+.mixerBoxDay {
+  font-size: 50px;
+  background-color: #8498B1;
+  border-color: #1D242D;
+  border-left-style: solid;
+  border-width: 15px;
+  margin-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 20px; }
+
+.audioIconPlayN {
+  color: #c9c61b;
   font-size: 40px;
   margin-left: 10px;
   margin-right: 10px; }
 
-.audioIconReset {
+.audioIconPlayN:hover {
+  color: #fffb2a; }
+
+.audioIconResetN {
   color: #B9B764;
   font-size: 40px;
   margin-left: 10px;
   margin-right: 10px; }
+
+.audioIconResetN:hover {
+  color: #f7f586; }
+
+.audioIconPlayD {
+  color: #a19f16;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.audioIconPlayD:hover {
+  color: #dad625; }
+
+.audioIconResetD {
+  color: #72713f;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.audioIconResetD:hover {
+  color: #b6b462; }
 
 p {
   text-align: center;
