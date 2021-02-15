@@ -4,6 +4,19 @@
 body {
     background-color: $secondarycolor;
 }
+h1 {
+    text-align: center;
+}
+.spanInitial, .spanEnd {
+    font-family: $brandfont;
+    font-size: 75px;
+    color: $brandcolor;
+}
+.spanMiddle {
+    font-family: $brandfont;
+    font-size: 75px;
+    color: $brandbold;
+}
 .call-to-action {
     background-color: $ctacolor;
     color: white;

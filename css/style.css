@@ -1,8 +1,18 @@
-h1, h2, h3, h4, h5, h6 {
-  color: #170c7a; }
-
 body {
-  background-color: #7f7fbe; }
+  background-color: #101419; }
+
+h1 {
+  text-align: center; }
+
+.spanInitial, .spanEnd {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 75px;
+  color: #B96467; }
+
+.spanMiddle {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 75px;
+  color: #632C2E; }
 
 .call-to-action {
   background-color: #f75d03;
